@@ -66,6 +66,7 @@ kubectl expose deployment nginx-app \
 # 5. Check if pods and service were created
 ```
 kubectl get pods -n production
+
 NAME                         READY   STATUS    RESTARTS   AGE
 nginx-app-65968468b6-d8j9x   1/1     Running   0          40s
 nginx-app-65968468b6-nzkxr   1/1     Running   0          40s
@@ -73,6 +74,7 @@ nginx-app-65968468b6-qr2wv   1/1     Running   0          40s
 ```
 ```
 kubectl get service -n production
+
 NAME            TYPE       CLUSTER-IP      EXTERNAL-IP   PORT(S)        AGE
 nginx-service   NodePort   10.100.67.147   <none>        80:30096/TCP   30s
 ```
